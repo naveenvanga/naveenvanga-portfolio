@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Vanga Naveen Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+
+        <a href="mailto:naveen8657@gmail.com" class="gmail"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.facebook.com/vanganaveen" target="_blank" class="facebook"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/iam_naveenvanga/" target="_blank" class="instagram">
+          <i class="bi bi-instagram"></i></a>
+
+        <a href="https://www.linkedin.com/in/naveen-vanga-4bb7a7104/" target="_blank" class="linkedin"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/919959559855" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-12" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <div class="about-content">
+                  <div class="section-header">
+                    <div class="hero_title-tag hide-tablet">
+                      <div class="icon-embed-custom-10 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%"
+                          height="100%" viewBox="0 0 14 14" fill="none" preserveAspectRatio="xMidYMid meet"
+                          aria-hidden="true" role="img">
+                          <path
+                            d="M5.43118 3.45165C5.7551 2.50373 7.06485 2.47503 7.44889 3.36553L7.48139 3.45219L7.91852 4.73053C8.0187 5.02369 8.18058 5.29197 8.39325 5.51726C8.60592 5.74254 8.86444 5.9196 9.15135 6.03648L9.26889 6.08036L10.5472 6.51694C11.4951 6.84086 11.5239 8.15061 10.6339 8.53465L10.5472 8.56715L9.26889 9.00428C8.97562 9.10439 8.70724 9.26624 8.48186 9.47892C8.25648 9.69159 8.07934 9.95014 7.96239 10.2371L7.91852 10.3541L7.48193 11.633C7.15802 12.5809 5.84827 12.6096 5.46477 11.7197L5.43118 11.633L4.9946 10.3547C4.89449 10.0614 4.73264 9.793 4.51996 9.56762C4.30729 9.34224 4.04874 9.16509 3.76177 9.04815L3.64477 9.00428L2.36643 8.56769C1.41798 8.24378 1.38927 6.93403 2.27977 6.55053L2.36643 6.51694L3.64477 6.08036C3.93794 5.98018 4.20621 5.8183 4.4315 5.60563C4.65678 5.39296 4.83384 5.13444 4.95073 4.84753L4.9946 4.73053L5.43118 3.45165ZM10.7899 1.58398C10.8912 1.58398 10.9905 1.61241 11.0765 1.66603C11.1625 1.71965 11.2317 1.79632 11.2763 1.88732L11.3023 1.95069L11.4919 2.50644L12.0482 2.69603C12.1497 2.73053 12.2388 2.7944 12.304 2.87955C12.3692 2.9647 12.4077 3.06729 12.4145 3.17433C12.4213 3.28136 12.3963 3.38802 12.3424 3.48079C12.2886 3.57355 12.2084 3.64824 12.1121 3.6954L12.0482 3.7214L11.4924 3.91098L11.3029 4.46728C11.2683 4.5688 11.2044 4.65778 11.1192 4.72294C11.034 4.7881 10.9314 4.8265 10.8244 4.83329C10.7173 4.84008 10.6107 4.81494 10.518 4.76106C10.4252 4.70719 10.3506 4.627 10.3035 4.53065L10.2775 4.46728L10.0879 3.91153L9.5316 3.72194C9.43005 3.68744 9.34102 3.62357 9.27581 3.53842C9.2106 3.45327 9.17213 3.35067 9.16528 3.24364C9.15844 3.13661 9.18352 3.02995 9.23736 2.93718C9.29119 2.84442 9.37135 2.76973 9.46768 2.72257L9.5316 2.69657L10.0874 2.50698L10.2769 1.95069C10.3135 1.84367 10.3826 1.75077 10.4746 1.685C10.5665 1.61924 10.6768 1.58392 10.7899 1.58398Z"
+                            fill="currentColor"></path>
+                        </svg></div>
+                      <div class="text-size-small">Welcome</div>
+                    </div>
+                    <!-- <span class="badge-text-welcome">Welcome</span> -->
+                  </div>
+                </div>
+                <h1>I'M Naveen Vanga</span></h1>
+                <p class="description">UI/UX Designer focused on crafting intuitive, accessible, and user-friendly
+                  digital solutions. Skilled in the full UX lifecycle—from research and design systems to translating
+                  high-fidelity mockups into responsive, production-ready web and mobile applications using modern
+                  technologies.</p>
+                <div class="hero-actions">
+                  <a href="#about" class="btn btn-outline">More About Me</a>
+                </div>
+              </div>
+            </div>
+
+                <!-- <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="assets/img/profile/profile-2.webp" alt="Alexander Chen" class="profile-image">
+                </div>
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <div class="hero_title-tag hide-tablet">
+                  <div class="text-size-small">Get to Know Me</div>
+                </div>
+                <!-- <span class="badge-text">Get to Know Me</span> -->
+                <h2>Passionate About Creating Digital Experiences</h2>
+              </div>
+
+              <div class="description">
+                <p class="text-justify">As a UI/UX Designer and Frontend Developer, I specialize in creating seamless,
+                  user-centered digital experiences from concept to code. I conduct user research, design wireframes and
+                  prototypes to solve real-world problems, and then bring those designs to life by developing
+                  responsive, accessible, and visually engaging interfaces using HTML, CSS, JavaScript, and modern
+                  frameworks like React and Angular. My focus is on blending empathetic design with clean, efficient
+                  front-end development to deliver products that are both intuitive and high-performing.
+                </p>
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">25+</div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number" data-experience-start-year="2017">7+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">90%</div>
+                  <div class="stat-label">Client Satisfaction</div>
+                </div>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Specialization</span>
+                    <span class="detail-value">UI/UX Designer & Frontend Developer</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Experience Level</span>
+                    <span class="detail-value">Senior Professional</span>
+                  </div>
+                </div>
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Education</span>
+                    <span class="detail-value">Bachelor of Technology in Mechanical Engineering</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Languages</span>
+                    <span class="detail-value">English</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="cta-section">
+                <a href="assets/Manikanta_Kasarla_Resume.pdf" target="_blank" class="btn btn-primary">
+                  <i class="bi bi-download"></i>
+                  Download Resume
+                </a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>UX Designer</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>User Experience</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Conducting user research and testing to inform design decisions that
+                    enhance usability and satisfaction.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Product Designer</h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Designing end-to-end product experiences that solve real user problems
+                    while aligning with business goals.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Visual Designer</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Designing pixel-perfect layouts, graphics, and components that elevate the
+                    overall user experience.</div>
+                </div>
+              </div>
+            </div><!-- End Backend Skills -->
+          </div>
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Front-end Development</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>HTML5/CSS</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Building responsive and semantic web pages that work seamlessly across
+                    devices and browsers.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>JavaScript/TypeScript</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Writing performant, bug-free scripts to enhance front-end functionality and
+                    user interactions.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>React/Angular</h4>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Building component-based, high-performance web applications using modern
+                    frameworks.
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Frontend Skills -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row">
+            <div class="col-lg-3 filter-sidebar">
+              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                <ul class="portfolio-filters isotope-filters">
+                  <li data-filter="*" class="filter-active">All Projects</li>
+                  <li data-filter=".filter-digiscript">Digiscript</li>
+                  <li data-filter=".filter-campus-ai">Campus AI</li>
+                  <li data-filter=".filter-advisor-ai">Advisor AI</li>
+                  <li data-filter=".filter-vector-docs">Vector Docs 360</li>
+                  <li data-filter=".filter-oaap">OAAP</li>
+                  <li data-filter=".filter-ap-automation">AP Automation</li>
+                  <!-- <li data-filter=".filter-mobilex">MobileX</li> -->
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-9">
+              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-digiscript">
+                  <div class="portfolio-wrap">
+                    <a href="portfolio-details-digiscript.php" title="Digiscript Platform Details">
+                      <h4>View More Details</h4>
+                    </a>
+                    <img src="assets/img/portfolio/digiscript-small.jpg" class="img-fluid" alt="Digiscript"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Digiscript</span>
+                        <h4>Digiscript Platform</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/digiscript-small.jpg" class="glightbox" title="Digiscript"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details-digiscript.php" title="More Details"><i
+                              class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-campus-ai">
+                  <div class="portfolio-wrap">
+                    <a href="portfolio-details-campus-ai.php" title="Campus AI Details">
+                      <h4>View More Details</h4>
+                    </a>
+                    <img src="assets/img/portfolio/campus-ai.jpg" class="img-fluid" alt="Campus AI" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Campus AI</span>
+                        <h4>Campus AI</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/campus-ai.jpg" class="glightbox" title="Campus AI"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details-campus-ai.php" title="More Details"><i
+                              class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-advisor-ai">
+                  <div class="portfolio-wrap">
+                    <a href="portfolio-details-advisor-ai.php" title="Advisor AI Details">
+                      <h4>View More Details</h4>
+                    </a>
+                    <img src="assets/img/portfolio/advisor-ai.jpg" class="img-fluid" alt="Advisor AI" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Advisor AI</span>
+                        <h4>Advisor AI</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/advisor-ai.jpg" class="glightbox" title="Advisor AI"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details-advisor-ai.php" title="More Details"><i
+                              class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-vector-docs">
+                  <div class="portfolio-wrap">
+                    <a href="portfolio-details-vector-docs-360.php" title="Vector Docs 360 Details">
+                      <h4>View More Details</h4>
+                    </a>
+                    <img src="assets/img/portfolio/vector-docs-360.jpg" class="img-fluid" alt="Vector Docs 360"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Vector Docs 360</span>
+                        <h4>Vector Docs 360</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/vector-docs-360.jpg" class="glightbox"
+                            title="Vector Docs 360"><i class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details-vector-docs-360.php" title="More Details"><i
+                              class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-oaap">
+                  <div class="portfolio-wrap">
+                    <a href="portfolio-details-oaap.php" title="OAAP Application Details">
+                      <h4>View More Details</h4>
+                    </a>
+                    <img src="assets/img/portfolio/oaap-sbctc.jpg" class="img-fluid" alt="OAAP" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">OAAP</span>
+                        <h4>OAAP Application</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/oaap-sbctc.jpg" class="glightbox" title="OAAP"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details-oaap.php" title="More Details"><i
+                              class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-ap-automation">
+                  <div class="portfolio-wrap">
+                    <a href="portfolio-details-ap-automation.php" title="AP Automation System Details">
+                      <h4>View More Details</h4>
+                    </a>
+                    <img src="assets/img/portfolio/ap-automation.jpg" class="img-fluid" alt="AP Automation"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">AP Automation</span>
+                        <h4>AP Automation System</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/ap-automation.jpg" class="glightbox" title="AP Automation"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details-ap-automation.php" title="More Details"><i
+                              class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-mobilex">
+                  <div class="portfolio-wrap">
+                    <a href="portfolio-details-ap-automation.php" title="MobileX Details">
+                      <h4>View More Details</h4>
+                    </a>
+                    <img src="assets/img/portfolio/ap-automation.jpg" class="img-fluid" alt="MobileX"
+                      loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">MobileX</span>
+                        <h4>MobileX System</h4>
+                        <div class="portfolio-links">
+                          <a href="assets/img/portfolio/ap-automation.jpg" class="glightbox" title="MobileX"><i
+                              class="bi bi-plus-lg"></i></a>
+                          <a href="portfolio-details-ap-automation.php" title="More Details"><i
+                              class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-12">
+            <div class="contact-form">
+              <h3>Get In Touch</h3>
+              <form method="post" class="php-email-form"
+                data-emailjs-service="service_cv4r7mr"
+                data-emailjs-template="template_0r0t9i6"
+                data-emailjs-public-key="OWdQQswfeEFAsMeg6">
+                <div class="row gy-4">
+
+                  <div class="info-item col-md-4">
+                    <div class="icon-box bg-light">
+                      <i class="bi bi-geo-alt text-dark"></i>
+                    </div>
+                    <div class="content">
+                      <h4 class="text-white">Location</h4>
+                      <p class="text-white">Hyderabad</p>
+                      <p class="text-white">India</p>
+                    </div>
+                  </div>
+
+                  <div class="info-item col-md-4">
+                    <div class="icon-box bg-light">
+                      <i class="bi bi-telephone text-dark"></i>
+                    </div>
+                    <div class="content">
+                      <h4 class="text-white">Contact Number</h4>
+                      <p class="text-white">+91 995 955 9855</p>
+                    </div>
+                  </div>
+
+                  <div class="info-item col-md-4">
+                    <div class="icon-box bg-light">
+                      <i class="bi bi-envelope text-dark"></i>
+                    </div>
+                    <div class="content">
+                      <h4 class="text-white">Email Address</h4>
+                      <p class="text-white">naveen8657@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- Main JS Files -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/contact-form.js"></script>
+
+</body>
+
+</html>
