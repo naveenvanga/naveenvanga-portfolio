@@ -10,6 +10,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/nv.png" rel="icon" type="image/png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -37,6 +38,9 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="header-container d-flex flex-column align-items-start">
+      <a href="index.html" class="site-logo" aria-label="N.V Home">
+        <span class="badge-logo">N.V</span>
+      </a>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
@@ -66,6 +70,7 @@
       <div class="social-links text-center">
 
         <a href="mailto:naveen8657@gmail.com" class="gmail"><i class="bi bi-envelope"></i></a>
+        <a href="https://wa.me/919959559855?text=Hello%21%20I%27d%20like%20to%20discuss%20UI%2FUX%20design.%20This%20is%20a%20message%20from%20your%20portfolio%20site." target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
         <a href="https://www.facebook.com/vanganaveen" target="_blank" class="facebook"><i
             class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/iam_naveenvanga/" target="_blank" class="instagram">
@@ -73,7 +78,7 @@
 
         <a href="https://www.linkedin.com/in/naveen-vanga-4bb7a7104/" target="_blank" class="linkedin"><i
             class="bi bi-linkedin"></i></a>
-        <a href="https://wa.me/919959559855" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        
       </div>
 
     </div>
@@ -113,10 +118,9 @@
                   </div>
                 </div>
                 <h1>I'M Naveen Vanga</span></h1>
-                <p class="description">UI/UX Designer focused on crafting intuitive, accessible, and user-friendly
-                  digital solutions. Skilled in the full UX lifecycle—from research and design systems to translating
-                  high-fidelity mockups into responsive, production-ready web and mobile applications using modern
-                  technologies.</p>
+                <p class="description">UI/UX Designer dedicated to crafting intuitive, accessible, and delightful
+                  digital products. I work end-to-end across the UX lifecycle—from research and design systems to
+                  turning high-fidelity designs into responsive, production-ready web and mobile experiences.</p>
                 <div class="hero-actions">
                   <a href="#about" class="btn btn-outline">More About Me</a>
                 </div>
@@ -486,7 +490,7 @@
 
                 <!-- <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-mobilex">
                   <div class="portfolio-wrap">
-                    <a href="portfolio-details-ap-automation.php" title="MobileX Details">
+                          <a href="portfolio-details-ap-automation.html" title="MobileX Details">
                       <h4>View More Details</h4>
                     </a>
                     <img src="assets/img/portfolio/ap-automation.jpg" class="img-fluid" alt="MobileX"

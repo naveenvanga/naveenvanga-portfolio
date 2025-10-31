@@ -10,6 +10,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon" type="image/png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -36,19 +37,23 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="header-container d-flex flex-column align-items-start">
+      <a href="index.html" class="site-logo" aria-label="N.V Home">
+        <span class="badge-logo">N.V</span>
+      </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.php#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-          <li><a href="index.php#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
 
-          <li><a href="index.php#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-          <li><a href="index.php#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul>
       </nav>
 
       <div class="social-links text-center">
           
          <a href="mailto:naveen8657@gmail.com" class="gmail"><i class="bi bi-envelope"></i></a>
+        <a href="https://wa.me/919959559855?text=Hello%21%20I%27d%20like%20to%20discuss%20UI%2FUX%20design.%20This%20is%20a%20message%20from%20your%20portfolio%20site." target="_blank" rel="noopener" class="whatsapp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
         <a href="https://www.facebook.com/vanganaveen" target="_blank" class="facebook"><i
             class="bi bi-facebook"></i></a>
         <a href="https://www.instagram.com/iam_naveenvanga/" target="_blank" class="instagram">
