@@ -1,42 +1,89 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Headers: Content-Type');
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+// Replace with your actual email address
+$receiving_email_address = 'naveen8657@gmail.com';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+// Function to sanitize input
+function sanitize_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+// Function to validate email
+function is_valid_email($email) {
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
+}
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+try {
+    // Check if this is a POST request
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        throw new Exception('Invalid request method');
+    }
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  isset($_POST['phone']) && $contact->add_message($_POST['phone'], 'Phone');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+    // Validate required fields
+    $required_fields = ['name', 'email', 'subject', 'message'];
+    foreach ($required_fields as $field) {
+        if (!isset($_POST[$field]) || empty($_POST[$field])) {
+            throw new Exception("$field is required");
+        }
+    }
 
-  echo $contact->send();
+    // Sanitize and validate input
+    $name = sanitize_input($_POST['name']);
+    $email = sanitize_input($_POST['email']);
+    $subject = sanitize_input($_POST['subject']);
+    $message = sanitize_input($_POST['message']);
+    $phone = isset($_POST['phone']) ? sanitize_input($_POST['phone']) : '';
+
+    // Validate email
+    if (!is_valid_email($email)) {
+        throw new Exception('Invalid email address');
+    }
+
+    // Prepare email content
+    $email_content = "Name: $name\n";
+    $email_content .= "Email: $email\n";
+    if (!empty($phone)) {
+        $email_content .= "Phone: $phone\n";
+    }
+    $email_content .= "Message:\n$message";
+
+    // Additional Headers
+    $headers = array();
+    $headers[] = 'MIME-Version: 1.0';
+    $headers[] = 'Content-type: text/plain; charset=UTF-8';
+    $headers[] = 'From: ' . $name . ' <' . $email . '>';
+    $headers[] = 'Reply-To: ' . $email;
+    $headers[] = 'X-Mailer: PHP/' . phpversion();
+
+    // Attempt to send email and capture any error message
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+    $mail_sent = mail($receiving_email_address, $subject, $email_content, implode("\r\n", $headers));
+    
+    if ($mail_sent) {
+        echo json_encode(['success' => true, 'message' => 'Message sent successfully']);
+    } else {
+        $error = error_get_last();
+        throw new Exception('Failed to send message: ' . ($error['message'] ?? 'Unknown error'));
+    }
+
+} catch (Exception $e) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false, 
+        'message' => $e->getMessage(),
+        'debug_info' => [
+            'error' => error_get_last(),
+            'php_version' => phpversion(),
+            'server' => $_SERVER['SERVER_SOFTWARE'] ?? 'unknown'
+        ]
+    ]);
+}
 ?>

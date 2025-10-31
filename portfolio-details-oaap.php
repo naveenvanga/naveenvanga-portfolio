@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Online Admissions Application Portal</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon" type="image/png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <a href="index.php" class="site-logo" aria-label="N.V Home">
+        <span class="badge-logo">N.V</span>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.php#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.php#about"><i class="bi bi-person navicon"></i> About</a></li>
+
+          <li><a href="index.php#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.php#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+          
+         <a href="mailto:naveen8657@gmail.com" class="gmail"><i class="bi bi-envelope"></i></a>
+        <a href="https://www.facebook.com/vanganaveen" target="_blank" class="facebook"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/iam_naveenvanga/" target="_blank" class="instagram">
+          <i class="bi bi-instagram"></i></a>
+
+        <a href="https://www.linkedin.com/in/naveen-vanga-4bb7a7104/" target="_blank" class="linkedin"><i
+            class="bi bi-linkedin"></i></a>
+           </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Online Admissions Application Portal for SBCTC</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.php">Home</a></li>
+            <li class="current">Online Admissions Application Portal for SBCTC</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/oaap.jpg" alt="Portfolio Image" class="img-fluid"
+                    loading="lazy">
+                </div>
+
+                <!-- <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-10.webp" alt="Portfolio Image" class="img-fluid"
+                    loading="lazy">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-7.webp" alt="Portfolio Image" class="img-fluid"
+                    loading="lazy">
+                </div> -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Role</strong>: UI/UX Designer & Frontend Developer</li>
+                <li><strong>Client</strong>: State Board for Community & Technical Colleges (SBCTC), Washington, USA </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project Overview</h2>
+              <p>
+                Developed a user-centric online admissions portal for the Washington State Board for Community and
+                Technical Colleges (SBCTC), enhancing the application process for over 337,000 students annually.
+              </p>
+              <div class="features mt-4">
+                <h3>Category</h3>
+                <div class="row gy-3">
+                  <div class="col-md-4">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-check-circle-fill"></i>
+                      <h4>Challenges :</h4>
+                      <ul>
+                        <li>Designing a centralized admission portal to serve 34 colleges with different branding
+                          requirements.</li>
+                        <li>Ensuring WCAG 2.1 AA compliance for a diverse applicant pool, including users with
+                          disabilities.</li>
+                        <li>Reducing high application drop-off rates due to complex workflows and long forms.</li>
+                        <li>Handling large-scale traffic (350K+ applicants annually) while maintaining performance.</li>
+                        <li>Balancing stakeholder requirements across multiple campuses with varied workflows.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-menu-button navicon"></i>
+                      <h4>Contributions :</h4>
+                      <ul>
+                        <li>Designed and developed a mobile-first, accessible frontend using semantic HTML, ARIA roles,
+                          and keyboard interactions.</li>
+                        <li>Created wireframes and interactive prototypes in Adobe XD, delivering annotated specs with
+                          accessibility guidelines.</li>
+                        <li>Improved application experience with autosave-enabled forms, streamlined navigation, and
+                          program comparison tools.</li>
+                        <li>Integrated OKTA SSO, document preview, and deadline filtering for a smoother user journey.
+                        </li>
+                        <li>Conducted usability testing across campuses, incorporating feedback into iterative design
+                          improvements.</li>
+                        <li>Built a scalable design system to support 30+ college-branded sites with consistent UI.</li>
+                        <li>Collaborated on performance optimizations (code-splitting, lazy loading) to cut initial load
+                          time by 40%.</li>
+                        <li>Performed comprehensive accessibility testing with NVDA, VoiceOver, axe DevTools, and
+                          Lighthouse.</li>
+                        <li>Reduced rework by providing developer-ready assets with detailed interaction and
+                          accessibility documentation.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-graph-up"></i>
+                      <h4>Impact:</h4>
+                      <ul>
+                        <li>Boosted application completion rate by 25%, reducing form abandonment.</li>
+                        <li>Lowered support tickets by 40% thanks to accessible, intuitive UI.</li>
+                        <li>Accelerated portal load times by 40%, improving performance across devices.</li>
+                        <li>Enabled consistent, scalable UI across 34 colleges, reducing design debt.</li>
+                        <li>Supported 350K+ applicants annually, improving access to higher education.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
