@@ -10,6 +10,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/nv.png" rel="icon" type="image/png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">

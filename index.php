@@ -39,7 +39,7 @@
 
     <div class="header-container d-flex flex-column align-items-start">
       <a href="index.html" class="site-logo" aria-label="N.V Home">
-        <span class="badge-logo">N.V</span>
+        <span class="badge-logo"><img src="assets/img/profile.jpg" alt="N.V" class="img-fluid logo-img"></span>
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
